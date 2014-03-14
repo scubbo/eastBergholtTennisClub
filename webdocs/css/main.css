@@ -1,10 +1,28 @@
-.outlined {
-    border: 5px solid orange;
+body {
+    background-color: #444;
 }
-#badAssMotherLover {
-    margin-left:50px;
+
+#mainWrapper {
+    background-color: #EEE;
+    width: 1080px;
+    height:100%;
+    margin:0px auto;
 }
-a#greenLink {
-    font-style: italic;
-    color: green;
+
+#headerImage {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+#sideBar {
+    margin: 0px 40px 0px 0px;
+    float:left;
+}
+
+#sideBar li {
+    background-color: blue;
+    color: white;
+    margin-bottom: 2px;
+    padding: 0px 10px;
+    border-radius: 0px 10px 10px 0px;
 }
