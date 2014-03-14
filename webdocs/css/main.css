@@ -1,0 +1,10 @@
+.outlined {
+    border: 5px solid orange;
+}
+#badAssMotherLover {
+    margin-left:50px;
+}
+a#greenLink {
+    font-style: italic;
+    color: green;
+}
