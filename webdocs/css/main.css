@@ -43,3 +43,7 @@ body {
 #sillyList {
     list-style: disc outside none;
 }
+
+#mapDiv {
+    height:100%;
+}
