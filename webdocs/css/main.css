@@ -17,6 +17,7 @@ body {
 #sideBar {
     margin: 0px 40px 0px 0px;
     float:left;
+    width:150px;
 }
 
 #sideBar li {
@@ -25,4 +26,20 @@ body {
     margin-bottom: 2px;
     padding: 0px 10px;
     border-radius: 0px 10px 10px 0px;
+    width: 140px; //Dislike hard-coding like this, but have to to make flyout work
+}
+
+#sideBar a.current li, #sideBar a:hover li {
+    padding-right: 20px;
+    background-color: yellow;
+    color: black;
+}
+
+#sideBar a:not(.current) li {
+    -webkit-transition: padding-right 0.1s, background-color 0.1s, color 0.1s;
+    transition: padding-right 0.1s, background-color 0.1s, color 0.1s;
+}
+
+#sillyList {
+    list-style: disc outside none;
 }
