@@ -87,7 +87,10 @@ strong {
 }
 
 #mapDiv {
-    height:100%;
+    height:500px;
+    width:850px;
+    background-color: white;
+    background:url(/img/ajax-loader.gif) center no-repeat;
 }
     
 #footer {
