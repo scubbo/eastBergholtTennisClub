@@ -1,5 +1,32 @@
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size:20px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
 body {
     background-color: #444;
+}
+
+p {
+    margin-bottom:5px;
+}
+
+strong {
+    font-weight: bold;
 }
 
 #mainWrapper {
@@ -15,33 +42,48 @@ body {
 }
 
 #sideBar {
-    margin: 0px 40px 0px 0px;
     float:left;
     width:150px;
 }
 
+#sideBar a {
+    text-shadow:1px 1px 1px #222;
+}
+
 #sideBar li {
-    background-color: blue;
+    background-color: #094b05;
     color: white;
-    margin-bottom: 2px;
-    padding: 0px 10px;
+    margin-bottom: 5px;
+    padding: 3px 10px;
     border-radius: 0px 10px 10px 0px;
     width: 140px; //Dislike hard-coding like this, but have to to make flyout work
 }
 
 #sideBar a.current li, #sideBar a:hover li {
     padding-right: 20px;
-    background-color: yellow;
-    color: black;
+    background-color: goldenrod;
+    color: #d5d5d5;
 }
 
 #sideBar a:not(.current) li {
-    -webkit-transition: padding-right 0.1s, background-color 0.1s, color 0.1s;
-    transition: padding-right 0.1s, background-color 0.1s, color 0.1s;
+    -webkit-transition: padding-right 0.3s, background-color 0.3s, color 0.3s;
+    transition: padding-right 0.3s, background-color 0.3s, color 0.3s;
 }
 
-#sillyList {
-    list-style: disc outside none;
+#sideBar #internalLinks {
+    margin-bottom: 35px;
+}
+
+#innerWrapper {
+    padding-left: 190px;
+}
+
+#helenQualificationList {
+    margin-bottom: 20px;
+}
+
+.ulWithBullets {
+    list-style: disc inside none;
 }
 
 #mapDiv {
