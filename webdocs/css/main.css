@@ -22,7 +22,9 @@ body {
 }
 
 p {
-    margin-bottom:5px;
+    margin-bottom:15px;
+    font-family:Arial;
+    line-height:20px;
 }
 
 strong {
@@ -76,6 +78,7 @@ strong {
 
 #innerWrapper {
     padding-left: 190px;
+    padding-right: 50px;
 }
 
 #helenQualificationList {
@@ -104,6 +107,7 @@ strong {
     color:#bbb;
     text-shadow:1px 1px 1px #222;
     padding-right:20px;
+    margin-bottom:0px;
 }
 #footer p a {
     color:#ddd;
