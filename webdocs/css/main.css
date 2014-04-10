@@ -38,9 +38,24 @@ strong {
     margin:0px auto;
 }
 
-#headerImage {
+#headerDiv {
     width:100%;
+    height:150px;
     margin-bottom: 20px;
+
+    background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 31%, #284925 82%, #094b05 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(31%,#ffffff), color-stop(82%,#284925), color-stop(100%,#094b05)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* IE10+ */
+background: linear-gradient(to right, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#094b05',GradientType=1 ); /* IE6-9 */
+}
+
+#headerImage {
+    width:150px;
+    float:left;
 }
 
 #sideBar {
@@ -94,6 +109,7 @@ strong {
     width:850px;
     background-color: white;
     background:url(/img/ajax-loader.gif) center no-repeat;
+    margin-bottom:15px;
 }
     
 #footer {
