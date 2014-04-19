@@ -1,19 +1,21 @@
 h1 {
     font-size: 35px;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
+    margin-top:25px;
     margin-bottom: 10px;
 }
 
 h3 {
-    font-size:20px;
-    text-decoration: underline;
+    font-size:22px;
+/*    text-decoration: underline;*/
+    font-weight: bold;
+    margin-top:5px;
     margin-bottom: 5px;
 }
 
@@ -24,11 +26,28 @@ body {
 p {
     margin-bottom:15px;
     font-family:Arial;
-    line-height:20px;
+    line-height:22px;
+    font-size:20px
+}
+
+p.indented {
+    margin-left:20px;
 }
 
 strong {
     font-weight: bold;
+}
+
+a {
+    text-decoration: underline;
+    color:#444;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    
+}
+
+a:hover {
+    color:#00C;
 }
 
 #mainWrapper {
@@ -51,11 +70,13 @@ background: -o-linear-gradient(left, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 
 background: -ms-linear-gradient(left, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* IE10+ */
 background: linear-gradient(to right, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#094b05',GradientType=1 ); /* IE6-9 */
+   border-radius:0px 0px 20px 20px; 
 }
 
 #headerImage {
     width:150px;
     float:left;
+    border-radius:20px;
 }
 
 h1#headerText {
@@ -80,6 +101,7 @@ h1#headerText {
 
 #sideBar a {
     text-shadow:1px 1px 1px #222;
+    text-decoration: none;
 }
 
 #sideBar li {
@@ -119,6 +141,27 @@ h1#headerText {
     list-style: disc inside none;
 }
 
+.headshot {
+    width:130px;
+}
+
+.contactDiv {
+    height:200px;
+}
+
+.contactDiv * {
+    text-align:right;
+}
+
+.contactDiv .headshot {
+    float:left;
+}
+
+#membershipFeesList {
+    line-height:22px;
+    font-size:20px;
+}
+
 #mapDiv {
     height:500px;
     width:850px;
@@ -134,6 +177,7 @@ h1#headerText {
     height:20px;
 }
 #footer p {
+    font-size: 16px;
     float:right;
     color:#bbb;
     text-shadow:1px 1px 1px #222;
