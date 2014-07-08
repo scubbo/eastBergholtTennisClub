@@ -177,9 +177,13 @@ h1#headerText {
 
 #footer {
     clear: both;
-    position: relative;
+    #position: relative;
     z-index: 10;
     height: 20px;
+    margin: -39px auto 0;
+    #position:absolute;
+    #bottom:0px;
+    width:1080px;
 }
 #footer p {
     font-size: 16px;
