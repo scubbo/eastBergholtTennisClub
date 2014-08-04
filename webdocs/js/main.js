@@ -22,9 +22,10 @@ $(document).ready(function() {
             if (status == 'error') {
                 $('#innerWrapper').load('/templates/content-404.html');
             }
+            $('#innerWrapper').append('<div id="footer"></div>');
+
+            $('#footer').load('/templates/footer.html');
         }
     );
-
-    $('#footer').load('/templates/footer.html');
 
 });

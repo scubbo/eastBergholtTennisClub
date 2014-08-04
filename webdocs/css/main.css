@@ -65,28 +65,39 @@ a:hover {
     width:100%;
     height:150px;
     margin-bottom: 20px;
-
-    background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 31%, #284925 82%, #094b05 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(31%,#ffffff), color-stop(82%,#284925), color-stop(100%,#094b05)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* IE10+ */
-background: linear-gradient(to right, #ffffff 0%,#ffffff 31%,#284925 82%,#094b05 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#094b05',GradientType=1 ); /* IE6-9 */
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right top,
+	color-stop(0.15, #FFFFFF),
+	color-stop(0.4, #114D00),
+	color-stop(0.6, #114D00),
+	color-stop(0.85, #FFFFFF)
+);
+background-image: -o-linear-gradient(right, #FFFFFF 15%, #114D00 40%, #114D00 60%, #FFFFFF 85%);
+background-image: -moz-linear-gradient(right, #FFFFFF 15%, #114D00 40%, #114D00 60%, #FFFFFF 85%);
+background-image: -webkit-linear-gradient(right, #FFFFFF 15%, #114D00 40%, #114D00 60%, #FFFFFF 85%);
+background-image: -ms-linear-gradient(right, #FFFFFF 15%, #114D00 40%, #114D00 60%, #FFFFFF 85%);
+background-image: linear-gradient(to right, #FFFFFF 15%, #114D00 40%, #114D00 60%, #FFFFFF 85%);
    border-radius:0px 0px 20px 20px; 
 }
 
-#headerImage {
+.headerImage {
     width:150px;
-    float:left;
     border-radius:20px;
 }
 
+#headerImageLeft {
+    float:left;
+}
+
+#headerImageRight {
+    float:right;
+}
+
 h1#headerText {
-    float: right;
+    margin: 0 auto;
     color: white;
-    margin: 16px 24px 0 0;
     font-size: 52px;
     width: 310px;
     text-align: right;
@@ -137,8 +148,20 @@ h1#headerText {
     padding-right: 50px;
 }
 
+.mainPicture {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+#helenCoachingPic {
+    float: right;
+    width: 20%;
+}
+
 #helenQualificationList {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .ulWithBullets {
@@ -146,7 +169,7 @@ h1#headerText {
 }
 
 .headshot {
-    width:130px;
+    width:300px;
 }
 
 .contactDiv {
@@ -177,13 +200,14 @@ h1#headerText {
 
 #footer {
     clear: both;
-    #position: relative;
+    position: relative;
     z-index: 10;
     height: 20px;
-    margin: -39px auto 0;
+    padding: 10px 0px 5px 0px;
+    #margin: -39px auto 0;
     #position:absolute;
-    #bottom:0px;
-    width:1080px;
+    bottom:0px;
+    #width:1080px;
 }
 #footer p {
     font-size: 16px;
